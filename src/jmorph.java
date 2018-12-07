@@ -15,6 +15,8 @@ import static java.awt.Color.RED;
 
 public class jmorph extends JFrame {
 
+
+	//trying to force changes in the commit to go through!!
     // Instance variables
     private BufferedImage image;   // the image
     private BufferedImage image2;  // second image
@@ -271,6 +273,7 @@ public class jmorph extends JFrame {
                     public void actionPerformed (ActionEvent e) {
                         // New JFrame for preview morph
                         previewMorph_frame = new JFrame("Preview Morph");
+			previewMorph_frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
                         previewMorph_frame.setVisible(true);
                         previewMorph_frame.setSize(800, 500);
                         previewMorph_frame.setResizable(false);
